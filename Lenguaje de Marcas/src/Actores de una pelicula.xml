@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pelicula nombre="Harry Potter y la Piedra Filosofal">
+ <pelicula nombre="Harry Potter y la Piedra Filosofal">
 	<personaje nombre="Harry Potter">
 		<actor nombre="Daniel Radcliffe"/>
 	</personaje>
