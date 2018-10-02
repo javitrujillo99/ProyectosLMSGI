@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE placas SYSTEM "PlacaBase.dtd">
+<placas>
+	<placa>
+		<microprocesador>Radeon 4517</microprocesador>
+		<memoria>8gb</memoria>
+		<modelo>AMD 156154</modelo>
+		<fabricante><asus/></fabricante>
+	</placa>
+	
+	<placa>
+		<microprocesador>i7 684</microprocesador>
+		<memoria>16gb</memoria>
+		<modelo>intel 46514</modelo>
+		<fabricante><intel/></fabricante>
+	</placa>
+	
+</placas>

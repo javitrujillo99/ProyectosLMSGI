@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<factura nombre="Fontanero">
+	<procesos>
+		<proceso nombre="Arreglar tubería">
+			<precio cantidadPorHora="5€"/>
+		</proceso>
+		<proceso nombre="Cambiar cisterna">
+			<precio cantidadPorHora="8€"/>
+		</proceso>
+		<proceso nombre="Arreglar grifo o ducha">
+			<precio cantidadPorHora="7€"/>
+		</proceso>
+		<proceso nombre="Cambio de cañerías completo">
+			<precio cantidadPorHora="15€"/>
+		</proceso>
+	</procesos>
+</factura>

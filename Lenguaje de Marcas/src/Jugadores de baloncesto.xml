@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  <!DOCTYPE plantilla [
+  <!ELEMENT plantilla (jugadores*)>
+  <!ELEMENT jugadores (jugador)>
+  <!ELEMENT jugador (nombre, posición, dorsal, altura )>
+  <!ELEMENT nombre (#PCDATA)>
+  <!ELEMENT posición (#PCDATA)>
+  <!ELEMENT dorsal (#PCDATA)>
+  <!ELEMENT altura (#PCDATA)>
+  -->
+]>
+<plantilla nombre="Portland Trail Blazers">
+	<posiciones>
+		<bases> 
+		    <jugador nombre="Lillard" dorsal="0" altura="1,91"/>
+			<jugador nombre="Curry" dorsal="5" altura="1,88"/>
+		</bases>
+		<escoltas>
+			<jugador nombre="McCollum" dorsal="3" altura="1,91"/>
+			<jugador nombre="Simons" dorsal="24" altura="1,93"/>
+		</escoltas>
+		<aleros>
+			<jugador nombre="Turner" dorsal="1" altura="2,01"/>
+			<jugador nombre="Harkless" dorsal="4" altura="2,06"/>
+		</aleros>
+		<ala-pivots>
+			<jugador nombre="Aminu" dorsal="8" altura="2,06"/>
+			<jugador nombre="Swanigan" dorsal="50" altura="2,08"/>
+		</ala-pivots>
+		<pivots>
+			<jugador nombre="Nurkic" dorsal="27" altura="2,13"/>
+			<jugador nombre="Collins" dorsal="33" altura="2,13"/>
+		</pivots>
+	</posiciones>
+
+</plantilla>

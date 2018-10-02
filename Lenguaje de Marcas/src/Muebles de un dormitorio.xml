@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<muebles nombre="Habitación">
+	<estudio>
+		<mueble nombre="Escritorio"/>
+		<mueble nombre="Biblioteca"/>
+	</estudio>
+	<descanso>
+		<mueble nombre="Mesita de noche"/>
+	</descanso>
+	<vestuario>
+		<mueble nombre="Armario"/>
+		<mueble nombre="Perchero"/>
+	</vestuario>
+</muebles>

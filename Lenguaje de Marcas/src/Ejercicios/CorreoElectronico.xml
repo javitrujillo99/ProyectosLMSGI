@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE emails SYSTEM "CorreoElectronico.dtd">
+<emails>
+	<email>
+		<para>fran@gmail.com</para>
+		<cc>carlos@gmail.com</cc>
+		<cco>dani@gmail.com</cco>
+		<asunto>Eeeeeeeeeeeeeeeeeeeeeee</asunto>
+		<texto>Que pasa chavales</texto>
+		<adjunto>
+			<nombre>Examen.jpg</nombre>
+			<mine-type>image/jpeg</mine-type>
+			<longitud>894KB</longitud>
+		</adjunto>
+	</email>
+</emails>

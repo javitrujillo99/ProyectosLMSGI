@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pelicula nombre="Harry Potter y la Piedra Filosofal">
+	<personaje nombre="Harry Potter">
+		<actor nombre="Daniel Radcliffe"/>
+	</personaje>
+	<personaje nombre="Ron Weasley">
+		<actor nombre="Rupert Grint"/>
+	</personaje>
+	<personaje nombre="Hermione Granger">
+		<actriz nombre="Emma Watson"/>
+	</personaje>
+	<personaje nombre="Draco Malfoy">
+		<actor nombre="Tom Felton"/>
+	</personaje>
+	<personaje nombre="Severus Snape">
+		<actor nombre="Alan Rickman"/>
+	</personaje>
+	<personaje nombre="Albus Dumbledore">
+		<actor nombre="Richard Harris"/>
+	</personaje>
+	<personaje nombre="Lord Voldemort">
+		<actor nombre="Richard Bremmer"/>
+	</personaje>
+	<personaje nombre="Profesor Quirrell">
+		<actor nombre="Ian Hart"/>
+	</personaje>
+	
+</pelicula>
