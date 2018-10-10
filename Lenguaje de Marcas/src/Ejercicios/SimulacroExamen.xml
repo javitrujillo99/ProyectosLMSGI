@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE trofeosYGanadores SYSTEM "SimulacroExamen.dtd">
+
+<trofeosYGanadores>
+	<ganadores nombre = "Di Stéfano" añoNacimiento = "1960" equipo = "Real Madrid" codigo = "a" estado = "retirado"/>
+	<ganadores nombre = "Koeman" añoNacimiento = "1961" equipo = "Barcelona" codigo = "b" estado = "retirado"/>
+	<ganadores nombre = "Pelé" añoNacimiento = "1962" equipo = "Juventus" codigo = "c" estado = "retirado"/>
+	<trofeos>
+		<liga codigosRef ="a b"> Ganada por el Madrid 32 veces</liga>
+		<champions codigosRef = "a c"> Se juega en Wembley</champions>
+		<copa codigoRef = "c"> Se jugó en el Santiago Bernabéu</copa>
+	</trofeos>
+</trofeosYGanadores>

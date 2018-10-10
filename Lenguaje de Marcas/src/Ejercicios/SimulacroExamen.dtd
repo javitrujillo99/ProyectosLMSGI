@@ -1,0 +1,17 @@
+<!ELEMENT trofeosYGanadores (ganadores+, trofeos?)*>
+<!ELEMENT ganadores EMPTY>
+<!ELEMENT trofeos (liga, champions, copa)*>
+<!ELEMENT liga (#PCDATA)>
+<!ELEMENT champions (#PCDATA)>
+<!ELEMENT copa (#PCDATA)>
+
+<!ENTITY % caracteristicas "nombre CDATA #IMPLIED 
+							añoNacimiento (1960 | 1961 | 1962 | 1963 | 1964 | 1965 ) #REQUIRED
+							equipo NMTOKENS #IMPLIED
+							codigo ID #REQUIRED
+							estado NMTOKEN #FIXED 'retirado'">				
+
+<!ATTLIST ganadores %caracteristicas;>
+<!ATTLIST liga codigosRef IDREFS #REQUIRED>
+<!ATTLIST champions codigosRef IDREFS #REQUIRED>
+<!ATTLIST copa codigoRef IDREF #REQUIRED>
