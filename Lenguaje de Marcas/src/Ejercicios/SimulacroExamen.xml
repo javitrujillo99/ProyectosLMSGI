@@ -6,8 +6,11 @@
 	<ganadores nombre = "Koeman" añoNacimiento = "1961" equipo = "Barcelona" codigo = "b" estado = "retirado"/>
 	<ganadores nombre = "Pelé" añoNacimiento = "1962" equipo = "Juventus" codigo = "c" estado = "retirado"/>
 	<trofeos>
-		<liga codigosRef ="a b"> Ganada por el Madrid 32 veces</liga>
-		<champions codigosRef = "a c"> Se juega en Wembley</champions>
-		<copa codigoRef = "c"> Se jugó en el Santiago Bernabéu</copa>
+		<balondeoro codigosRef ="a b">Di Stéfano lo ganó 3 veces</balondeoro>
+		<champions codigosRef = "a c">Se juega en Wemble</champions>
+		<copa codigoRef = "c">Se jugó en el Santiago Bernabéu &copa;</copa>
+		<supercopa codigosRef = "a c"><jugada estadio ="Camp Nou"/></supercopa>
+		<supercopa codigosRef = "b"/>
+		<supercopa codigosRef = "c">El equipo de Pelé la gano en el 1962</supercopa>
 	</trofeos>
 </trofeosYGanadores>

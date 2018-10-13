@@ -1,17 +1,24 @@
 <!ELEMENT trofeosYGanadores (ganadores+, trofeos?)*>
 <!ELEMENT ganadores EMPTY>
-<!ELEMENT trofeos (liga, champions, copa)*>
-<!ELEMENT liga (#PCDATA)>
+<!ELEMENT trofeos (balondeoro, champions, copa, supercopa+)*>
+<!ELEMENT balondeoro (#PCDATA)>
 <!ELEMENT champions (#PCDATA)>
 <!ELEMENT copa (#PCDATA)>
+<!ELEMENT supercopa (#PCDATA | jugada)*>
+<!ELEMENT jugada EMPTY>
+<!ELEMENT noJugada EMPTY>
 
 <!ENTITY % caracteristicas "nombre CDATA #IMPLIED 
-							añoNacimiento (1960 | 1961 | 1962 | 1963 | 1964 | 1965 ) #REQUIRED
+							añoNacimiento (1960 | 1961 | 1962 | 1963 | 1964 | 1965) #REQUIRED
 							equipo NMTOKENS #IMPLIED
 							codigo ID #REQUIRED
-							estado NMTOKEN #FIXED 'retirado'">				
+							estado NMTOKEN #FIXED 'retirado'">
+							
+<!ENTITY copa "Copa de España">				
 
 <!ATTLIST ganadores %caracteristicas;>
-<!ATTLIST liga codigosRef IDREFS #REQUIRED>
+<!ATTLIST balondeoro codigosRef IDREFS #REQUIRED>
 <!ATTLIST champions codigosRef IDREFS #REQUIRED>
 <!ATTLIST copa codigoRef IDREF #REQUIRED>
+<!ATTLIST supercopa codigosRef IDREFS #REQUIRED>
+<!ATTLIST jugada estadio CDATA #REQUIRED>
