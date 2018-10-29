@@ -22,3 +22,6 @@
 <!ATTLIST copa codigoRef IDREF #REQUIRED>
 <!ATTLIST supercopa codigosRef IDREFS #REQUIRED>
 <!ATTLIST jugada estadio CDATA #REQUIRED>
+
+COMENTARIOS:
+<!-- -->

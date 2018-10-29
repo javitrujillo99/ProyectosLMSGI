@@ -1,0 +1,29 @@
+<!ELEMENT articulosDecoracionInterior (articulo*, cliente+, clienteConMasDeUnaCompra*)>
+<!ELEMENT articulo (añoFabricacion?, (enStock | noEnStock))*>
+<!ELEMENT cliente EMPTY>
+<!ELEMENT clienteConMasDeUnaCompra EMPTY>
+<!ELEMENT añoFabricacion (#PCDATA)>
+<!ELEMENT enStock EMPTY>
+<!ELEMENT noEnStock (#PCDATA | fechaStock)*>
+<!ELEMENT fechaStock (#PCDATA)>
+
+<!ATTLIST articulo nombre NMTOKENS #REQUIRED 
+				   material CDATA #IMPLIED
+				   codigoArticulo ID #REQUIRED
+				   estado NMTOKEN #FIXED "nuevo">
+					
+<!ATTLIST enStock cantidad (50|100|150|200) #REQUIRED
+				  precioPorUnidad CDATA #IMPLIED>
+				  
+<!ENTITY % caracteristicas "nombre NMTOKENS #IMPLIED 
+							DNI NMTOKEN #REQUIRED
+							codigoArticuloComprado IDREF #REQUIRED
+							fecha CDATA #IMPLIED">
+
+<!ATTLIST cliente %caracteristicas;>
+<!ATTLIST clienteConMasDeUnaCompra nombre NMTOKENS #IMPLIED 
+								   DNI NMTOKEN #REQUIRED
+								   codigosArticulosComprados IDREFS #REQUIRED
+								   fecha CDATA #IMPLIED>
+				  		
+<!ENTITY noEnStock "Cada 15 días se traen nuevos artículos de este tipo.">

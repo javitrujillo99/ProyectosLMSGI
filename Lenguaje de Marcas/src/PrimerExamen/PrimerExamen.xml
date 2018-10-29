@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulosDecoracionInterior SYSTEM "PrimerExamen.dtd">
+
+<articulosDecoracionInterior>
+	<articulo nombre = "Jarrón" material = "Cerámica" codigoArticulo = "aph" estado = "nuevo">
+		<añoFabricacion>1999</añoFabricacion>
+		<enStock cantidad = "50" precioPorUnidad = "50"/>
+	</articulo>
+	<articulo nombre = "Cuadro" material = "Madera" codigoArticulo = "abc" estado = "nuevo">
+		<noEnStock>&noEnStock;</noEnStock>
+	</articulo>
+	<articulo nombre = "Lámpara" material = "Cristal" codigoArticulo = "jmn" estado = "nuevo">
+		<enStock cantidad = "100" precioPorUnidad = "200"/>
+	</articulo>
+	<articulo nombre = "Florero" material = "Mármol" codigoArticulo = "hgb" estado = "nuevo">
+		<noEnStock>
+			<fechaStock>Volverá a estar disponible el día 22 de febrero de 2018</fechaStock>
+		</noEnStock>
+	</articulo>
+	<cliente nombre = "Pepe Guijarro" DNI = "23904894E" codigoArticuloComprado = "aph" fecha = "10 de marzo de 2006"/>
+	<cliente nombre = "Fran Beato" DNI = "40832981T" codigoArticuloComprado = "jmn" fecha = "23 de Enero de 2010"/>
+	<clienteConMasDeUnaCompra nombre = "Carlos Córdoba" DNI = "34989834R" codigosArticulosComprados = "abc hgb" fecha = "22 de Mayo de 2015"/>
+</articulosDecoracionInterior>

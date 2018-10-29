@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE relojes SYSTEM "SimulacroExamen2.dtd">
+
+<relojes>
+	<reloj nombre = "Casio ultimate">
+		<marca>Casio</marca>
+		<precio>500</precio>
+	</reloj>
+</relojes>
