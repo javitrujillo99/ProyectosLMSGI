@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clubesNBA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SimulacroExamen2017.xsd">
+	<conferenciaOeste>
+		<club nombre = "Portland Trail Blazers" ciudad = "Portland (Oregon)"
+			  colorCamisetasEquipo = "rojo negro blanco">Este es mi equipo favorito de la NBA
+	  		<jugadorEstrella nombre = "Damian Lillard" dorsal = "0" posicion = "Base"
+			  matriculaCoche = "1234ABC" codigo = "DLILPOR000" direccionMACCasa = "00:1B:44:11:3A:B7"/>
+  	 	</club>
+  	 	<club nombre = "Golden State Warriors" ciudad = "Oakland (California)"
+			  colorCamisetasEquipo = "azul blanco amarillo">
+	    	<jugadorEstrella nombre = "Kevin Durant" dorsal = "35" posicion = "Alero"
+			  matriculaCoche = "5783LGB" codigo = "KDURGOL035" direccionMACCasa = "01:1B:44:1C:3A:B7"/>
+  	 	</club>
+    </conferenciaOeste>
+    <conferenciaEste>
+	    <club nombre = "Boston Celtics" ciudad = "Boston (Massachusetts)"
+			  colorCamisetasEquipo = "verde negro blanco">
+	    	<jugadorEstrella nombre = "Kyrie Irving" dorsal = "11" posicion = "Base"
+			  matriculaCoche = "5678DDD" codigo = "KIRVBOS011" direccionMACCasa = "00:2B:48:21:8C:B9"/>
+	    </club>
+	    <club nombre = "Toronto Raptors" ciudad = "Toronto (Canada)"
+			  colorCamisetasEquipo = "negro blanco rojo">
+			<jugadorEstrella nombre = "Kawhi Leonard" dorsal = "2" posicion = "Escolta"
+			  matriculaCoche = "8952JGB" codigo = "KLEOTOR002" direccionMACCasa = "10:2B:48:21:8C:B9"/>
+	  	</club>
+    </conferenciaEste>
+</clubesNBA>

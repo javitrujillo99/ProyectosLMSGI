@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="clubesNBA" type ="tipoClub"/>
+	
+	<xs:complexType name="tipoClub">
+		<xs:sequence>
+  			<xs:element name="conferenciaOeste" type="tipoConferenciaOeste"/>
+  			<xs:element name="conferenciaEste" type="tipoConferenciaEste"/>
+  		</xs:sequence>
+ 	</xs:complexType>
+ 	
+ 	
+ 	<xs:complexType name="tipoConferenciaOeste">
+ 	 	<xs:sequence>
+  			<xs:element name="club" type="tipoClubes" maxOccurs="unbounded"/>
+  		</xs:sequence>
+	</xs:complexType>
+	
+	
+	<xs:complexType name="tipoConferenciaEste">
+ 	 	<xs:sequence>
+  			<xs:element name="club" type="tipoClubes" maxOccurs="unbounded"/>
+  		</xs:sequence>
+	</xs:complexType>
+
+	 
+	<xs:complexType name = "tipoClubes" mixed = "true">
+		<xs:sequence>
+			<xs:element name = "jugadorEstrella" type = "tipoJugadorEstrella"/>
+		</xs:sequence>
+		<xs:attribute name = "nombre" type = "xs:string"/>
+		<xs:attribute name = "ciudad" type = "xs:string"/>
+		<xs:attribute name = "colorCamisetasEquipo" type = "listaTipoCamisetas"/>
+	</xs:complexType>
+	
+	<xs:simpleType name = "tipoCamisetas">
+  		<xs:restriction base="xs:string">
+			<xs:enumeration value="rojo"/>
+			<xs:enumeration value="blanco"/>
+			<xs:enumeration value="negro"/>
+			<xs:enumeration value="verde"/>
+			<xs:enumeration value="amarillo"/>
+			<xs:enumeration value="azul"/>
+			<xs:enumeration value="naranja"/>
+		</xs:restriction>
+  	</xs:simpleType>
+  	
+  	
+  	<xs:simpleType name="listaTipoCamisetas">
+  		<xs:list itemType="tipoCamisetas"/>
+  	</xs:simpleType>
+  
+
+
+	<xs:complexType name="tipoJugadorEstrella">
+		<xs:attribute name = "nombre" type = "xs:string"/>
+		<xs:attribute name = "dorsal" type = "restriccion0al99"/>
+		<xs:attribute name = "posicion" type = "tipoPosicion"/>
+		<xs:attribute name = "matriculaCoche" type = "tipoMatricula"/>
+		<xs:attribute name = "codigo" type = "tipoCodigo"/>
+		<xs:attribute name = "direccionMACCasa" type = "tipoMAC"/>
+	</xs:complexType>
+	
+	<xs:simpleType name="restriccion0al99">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value = "0"/>
+			<xs:maxInclusive value = "99"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:simpleType name="tipoPosicion">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Base"/>
+			<xs:enumeration value="Escolta"/>
+			<xs:enumeration value="Alero"/>
+			<xs:enumeration value="Ala Pivot"/>
+			<xs:enumeration value="Pivot"/>
+		</xs:restriction>
+	</xs:simpleType>
+ 	 
+ 	<xs:simpleType name = "tipoMatricula">
+  		<xs:restriction base="xs:string">
+  			<xs:pattern value="[0-9]{4}[A-Z]{3}"/>
+  		</xs:restriction>
+  	</xs:simpleType>
+  	
+  	<xs:simpleType name = "tipoCodigo">
+  		<xs:restriction base="xs:string">
+  			<xs:pattern value="[A-Z]{7}[0-9]{3}"/>
+  		</xs:restriction>
+  	</xs:simpleType>
+  	
+  	<xs:simpleType name = "tipoMAC">
+  		<xs:restriction base="xs:string">
+  			<xs:pattern value="(([0-9]|[A-F]){2}:?){6}"/>
+  		</xs:restriction>
+  	</xs:simpleType>
+ 	
+</xs:schema>
