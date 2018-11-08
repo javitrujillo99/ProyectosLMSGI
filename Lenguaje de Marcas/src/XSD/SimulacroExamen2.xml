@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpsons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SimulacroExamen2.xsd">
+	<localidad valor = "Springfield" anyoFundacion = "1800"/>
+	<pelicula>Estreno el dia 15 de marzo de 2012
+		<titulo>Los Simpsons la pelicula</titulo>
+	</pelicula>
+	<creador bso = "Danny Elfman">Matt Groening</creador>
+	<familia nombre ="Simpsons">5</familia>
+	<temporada>
+		<temporada01>Esta es la que más me gusta</temporada01>
+		<!-- <temporada02/> -->
+		<!-- <temporada03/> -->
+	</temporada>
+	<personajes>
+		<Maggie edad ="40"/>
+		<Lisa edad ="12"/>
+		<Bart edad ="14"/>
+		<Marge edad ="35"/>
+		<Homer edad ="46"/>
+	</personajes>
+	<colorPersonajes principal = "amarillo" negro = "100" amarillo = "900" verde = "400"/>
+	<MontgomeryBurns dni = "12345678A" matriculaCoche = "0001ABC" direccionMAC = "14:E3:A5:34:87:EF" color = "amarillo"/>
+	<localidadRival>Sevilla</localidadRival>
+	<localidadesAmigas>Portland Chicago California</localidadesAmigas>
+	<Burney bebidaDiaria = "ron" bebidaFavorita = "whisky"/>
+</simpsons>

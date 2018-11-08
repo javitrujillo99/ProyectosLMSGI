@@ -25,9 +25,9 @@
 
 	 
 	<xs:complexType name = "tipoClubes" mixed = "true">
-		<xs:sequence>
+		<xs:all>
 			<xs:element name = "jugadorEstrella" type = "tipoJugadorEstrella"/>
-		</xs:sequence>
+		</xs:all>
 		<xs:attribute name = "nombre" type = "xs:string"/>
 		<xs:attribute name = "ciudad" type = "xs:string"/>
 		<xs:attribute name = "colorCamisetasEquipo" type = "listaTipoCamisetas"/>
