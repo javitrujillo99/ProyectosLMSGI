@@ -17,6 +17,9 @@
 			<xs:element name = "localidadRival" type = "tipoLocalidadRival"/>
 			<xs:element name = "localidadesAmigas" type = "tipoLocalidadesAmigas"/>
 			<xs:element name = "Burney" type = "tipoBurney"/>
+			<xs:element name = "Apu" type = "tipoApu"/>
+			<xs:element name = "Manyula" type = "tipoManyula"/>
+			<xs:element name = "Hugo" type = "tipoHugo"/>
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -244,4 +247,38 @@
   	    	</xs:restriction>
   	    </xs:simpleType>
   	   
+  	   <!-- 
+  	    -->
+  	    
+  	    <xs:complexType name="tipoApu">
+  	    	<xs:sequence>
+  	    		<xs:element name = "apodo" type = "xs:string"/>
+  	    	</xs:sequence>
+  	    	<xs:attribute name = "fechaNacimiento" type = "xs:string"/>
+  	    </xs:complexType>
+  	    
+  	    <!-- 
+  	     -->
+  	     
+  	    <xs:complexType name = "tipoManyula">
+  	   		 <xs:complexContent>
+     	 		<xs:extension base="tipoApu">
+     	 			<xs:sequence>
+     	 				<xs:element name = "DiosPreferido" type = "xs:string"/>
+     	 			</xs:sequence>
+       			<xs:attribute name="nacionalidad" type="xs:string"/>
+     			</xs:extension>
+    		</xs:complexContent>
+  		</xs:complexType>
+  		
+  		<!-- 
+  		 -->
+  		 
+  		 <xs:complexType name="tipoHugo">
+  		 	<xs:choice maxOccurs="unbounded">
+  		 		<xs:element name = "aficion" type = "xs:string"/>
+  		 		<xs:element name = "ladoCicatriz" type = "xs:string"/>
+  		 		<xs:element name = "edad" type = "xs:integer"/>		 		
+  		 	</xs:choice>
+  		 </xs:complexType>
 </xs:schema>

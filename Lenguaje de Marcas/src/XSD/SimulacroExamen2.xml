@@ -23,4 +23,19 @@
 	<localidadRival>Sevilla</localidadRival>
 	<localidadesAmigas>Portland Chicago California</localidadesAmigas>
 	<Burney bebidaDiaria = "ron" bebidaFavorita = "whisky"/>
+	<Apu fechaNacimiento = "11 de mayo">
+		<apodo>El negro</apodo>
+	</Apu>
+	<Manyula fechaNacimiento = "2 de agosto" nacionalidad = "italiana">
+		<apodo>La novia el Negro</apodo>
+		<DiosPreferido>Shyva</DiosPreferido>
+	</Manyula>
+	<Hugo>
+		<aficion>Coser pajaros</aficion>
+		<ladoCicatriz>Derecho</ladoCicatriz>
+		<edad>4</edad>
+		<aficion>Correr</aficion>
+		<edad>6</edad>
+		<aficion>Nadar</aficion>
+	</Hugo>
 </simpsons>
