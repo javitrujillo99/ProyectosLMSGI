@@ -38,6 +38,9 @@
 		</xs:sequence>
 	</xs:complexType>
 	
+	<!-- 
+	 -->
+	
 	<xs:complexType name="tipoCreador" mixed = "true">
 		<xs:attribute name = "bso" type = "xs:string"/>
 	</xs:complexType>
