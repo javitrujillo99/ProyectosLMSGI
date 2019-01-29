@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="PrimerEjemploXSL.xsl"?>
+
+<navidad>
+	<almuerzo>
+		<primerPlato>Patatas bravas</primerPlato>
+		<segundoPlato>Entrecot de ternera</segundoPlato>
+		<postre>Danonino</postre>
+		<bebida>Licor de hierba</bebida>
+		<sobremesa>
+			<primeraCopa>Vodka-naranja</primeraCopa>
+			<segundaCopa>Dyc-Pepsi</segundaCopa>
+			<terceraCopa>Ginebra</terceraCopa>
+		</sobremesa>
+	</almuerzo>
+</navidad>
